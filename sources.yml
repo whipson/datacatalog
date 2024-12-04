@@ -1,0 +1,16 @@
+src1:
+  type: local_file
+  paths:
+    - some-data
+    - somore-data
+  extension: .csv
+  recurse: true
+  reader: readr::read_csv
+
+src2:
+  type: local_file
+  path: some-parquets
+  extensions:
+    - ''
+    - .parquet
+  reader: arrow::read_parquet

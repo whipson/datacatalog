@@ -1,0 +1,37 @@
+# I think the resulting YAML should look something like this:
+# Tables
+flights:
+  title: Flights
+  desc: Departure times for flights.
+  source:
+    type: csv
+    path: some-data/flights.csv
+
+passengers:
+  title: Passenger Counts
+  desc: Counts of departing passengers.
+  source:
+    type: csv
+    path: some-data/passengers.csv
+
+# Columns
+flights:
+  date:
+    type: Date
+    desc: Date in Atlantic Time.
+  time:
+    type: String
+    desc: Time of the flight departure in HH:MM Atlantic Time.
+  carrier:
+    type: String
+    desc: 2-character IATA code for the airline carrier.
+
+passengers:
+  date:
+    type: Date
+    desc: Date in Atlantic Time.
+  count:
+    type: Int
+    desc: Number of passengers who scanned through.
+
+# Is there an intermediate representation?

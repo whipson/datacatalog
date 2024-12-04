@@ -1,0 +1,4 @@
+src: some-data/flights.csv
+'':
+  title: flights.csv
+  desc: ''
